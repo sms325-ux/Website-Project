@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Navbar</title>
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet">
+      <style>
+        p {
+          text-align: center;
+        }
+
+        h1 {
+          text-align: center;
+          margin-bottom: 10px;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 60px;
+        }
+
+        h2 {
+          margin-top: 10px;
+        }
+        body {
+          background: linear-gradient(to bottom, #bfe0ff, #ffffff);
+          background-attachment: fixed;  
+        }
+
+        #greekCarousel .carousel-item {
+          height: 600px;        
+        }
+
+        #greekCarousel .carousel-item img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+
+        .card a.btn {
+          position: relative;
+          z-index: 10;
+        }
+      </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="index.html">Greek Travels</a>
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+      
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="activitiesDropdown" role="button" data-bs-toggle="dropdown">
+            Activities
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Tours.html">Tours</a></li>
+            <li><a class="dropdown-item" href="Hikes.html">Hikes</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="locationsDropdown" role="button" data-bs-toggle="dropdown">
+            Locations
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Hotels.html">Hotels</a></li>
+            <li><a class="dropdown-item" href="Landmarks.html">Landmarks</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Payment.html">Pricing & Payment</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="flex-shrink-0">
+  <div class="container py-5">
+      <h1>Welcome to Greek Travels</h1>
+      <div id="greekCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#greekCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#greekCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#greekCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+    
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="images/greekbeach.jpg" class="d-block w-100" alt="Greece Beach">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Beautiful Greek Beaches</h5>
+              <p>Experience the crystal-clear waters of the Mediterranean.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/acropolis.jpg" class="d-block w-100" alt="Greek Temple">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Historic Landmarks</h5>
+              <p>Walk among ancient ruins and timeless architecture.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/islandtour.jpg" class="d-block w-100" alt="Greek Island">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Island Adventures</h5>
+              <p>Explore Santorini, Mykonos, and the beautiful Cyclades.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <h2 class="text-center mb-4">Featured Adventures</h2>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+   
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/tour.jpg" class="card-img-top" alt="Tours">
+            <div class="card-body">
+              <h5 class="card-title">Guided Tours</h5>
+              <p class="card-text">
+                Experience Greece with our professional guides who bring culture and history to life.
+              </p>
+              <a href="Tours.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/hike.jpg" class="card-img-top" alt="Hiking Trails">
+            <div class="card-body">
+              <h5 class="card-title">Hiking Adventures</h5>
+              <p class="card-text">
+                Traverse Greece’s stunning landscapes, from mountain paths to coastal hikes.
+              </p>
+              <a href="Hikes.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="images/hotel.jpg" class="card-img-top" alt="Hotels">
+            <div class="card-body">
+              <h5 class="card-title">Top Accommodations</h5>
+              <p class="card-text">
+                Stay in beautiful hotels with breathtaking views and world-class service.
+              </p>
+              <a href="Hotels.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#greekCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#greekCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+      
+
+      <p class="lead text-center">
+        Explore Greece through our guided tours, hikes, and destination experiences.
+      </p>
+      <p>Welcome to Greek Travels, your gateway to the beauty, history, and adventure of Greece. Whether you're dreaming of relaxing on white-sand beaches, exploring ancient ruins, or hiking rugged island trails, we are here to help you experience Greece the way it was meant to be seen. Discover unforgettable tours, breathtaking landscapes, and culture that spans centuries — all curated to give you the trip of a lifetime.</p>
+  </div>
+</main>
+
+<footer class="mt-auto bg-dark text-white text-center py-3">
+  <div class="container">
+      <p class="mb-1">© 2025 Greek Travels  Website designed by Sean Sweeney — IS117-007 </p>
+      <p class="mb-0">https://example.com/terms-of-service-demo   httpps://example.com/privacy-policy-demo</p>
+  </div>
+</footer>
+
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>
